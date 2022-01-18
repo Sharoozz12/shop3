@@ -1,0 +1,250 @@
+.side-p{
+    padding-right: 120px;
+    padding-left: 120px;
+}
+.title h1{
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 50px;
+    color: #474F56;
+}
+.tile-desc{
+    font-size: 14px;
+    color: #484F56;
+    font-family: 'Rubik', sans-serif;
+    
+}
+.extras-link .single-link{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.extras-link .single-link li{
+    border-bottom: 1px solid #c1c6cc;
+    width: 22%;
+    margin-right: 30px;
+    margin-top: 15px;
+    font-size: 16px;
+    color: black;
+}
+
+@media (min-width: 750px) and (max-width: 800px){
+    .extras-link .single-link li{
+        width: 28%;
+
+    }  
+}
+
+.product .card{
+    margin: 0 2.5px;
+}
+.product .card-body{
+    font-family: poppins;
+}
+.product .card-price{
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.product .card{
+    border: none;
+}
+
+.sizes{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sizes div{
+    padding: 2px 5px;
+    border: 1px solid rgba(87, 86, 86, 0.445);
+    border-radius: 5px;
+    margin: 2px;
+    font-size: 14px;
+}
+.sizes div:hover{
+    cursor: pointer;
+    border: 1px solid black;
+}
+.colors{
+    display: flex;
+}
+.colors div:hover{
+    cursor: pointer;
+}
+.colors div{
+    width: 25px;
+    height: 25px;
+    margin: 2px;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+.colors div:nth-child(1) {
+    background: red;
+  }
+.colors div:nth-child(2) {
+    background: green;
+  }
+.colors div:nth-child(3) {
+    background: blue;
+  }
+.colors div:nth-child(4) {
+    background: pink;
+  }
+.colors div:nth-child(5) {
+    background: purple;
+  }
+.colors div:nth-child(6) {
+    background: rgb(129, 71, 71);
+  }
+
+.card .heart{
+    font-size: 12px;
+    width: 25px;
+    position: absolute;
+    right: 12px;
+    top: 10px;
+}
+@media (width: 1024px){
+    .colors div {
+        width: 20px;
+        height: 20px;
+        margin: 1px;
+    }    
+}
+@media (max-width: 540px){
+    .side-p{
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+}
+
+
+/* mobile add to card buttons */
+.mob-buttons{
+    margin-top: 10px;
+}
+.mob-buttons .btn-heart{
+    background-color: #f3f3f3;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 2px;
+}
+.mob-buttons .btn-addToCard{
+    background-color: #232429;
+    border: none;
+    color: white;
+    /* padding: 8px 25px; */
+    width: 100%;
+    border-radius: 2px;
+    margin: 0 4px;
+}
+.mob-buttons .btn-size{
+    background-color: #f3f3f3;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 2px;
+
+}
+.mob-buttons .btn-s-guide{
+    background-color: #f3f3f3;
+    padding: 8px 20px;
+    border: none;
+    width: 100%;
+    border-radius: 2px;
+
+}
+@media (max-width: 325px){
+    .mob-buttons .btn-addToCard{
+        font-size: 14px;
+    }
+    .mob-buttons .btn-heart{
+        padding: 8px 12px;
+
+    }
+    .mob-buttons .btn-size{
+        padding: 8px 10px;
+    }
+
+}
+
+.card .sep{
+    height: 15px;
+    border-right: 2px solid grey;
+    margin-top: 5px;
+
+}
+.card .vid{
+    background-color: #f5f5f5;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.card .star{
+    width: 8px;
+}
+
+@media (max-width: 550px){
+    .card .vid{
+        font-size: 12px;
+    }
+    .filters{
+        display: none;
+    }
+    .extras-link{
+        display: none;
+    }
+    
+}
+@media(min-width: 700px){
+    .mob-buttons{
+        display: none;
+    }
+}
+
+.filters h6{
+    font-size: 0.8rem;
+}
+.filters .categories p{
+    font-size: 14px;
+}
+.filters .brands label, .filters .genders label{
+    font-size: 14px;
+}
+
+@media (min-width: 700px) and (max-width: 1025px){
+    .side-p{
+        padding-right: 80px;
+        padding-left: 80px;
+    }
+}
+
+.cus-filters .accordion-button:not(.collapsed) {
+    background-color: transparent!important;
+}
+.cus-filters .accordion-button{
+    font-size: 14px;
+}
+
+.cus-filters .accordion-button:focus{
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.product .price-original{
+    text-decoration: line-through;
+    color: #c1c6cc;
+    font-size: 13px;
+    font-weight: 600;
+}
+.product .price-discount{
+    font-size: 13px;
+    font-weight: 600;
+}
+.product .price-save{
+    font-size: 13px;
+    background-color: black;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+}
