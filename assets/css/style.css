@@ -25,8 +25,9 @@
     width: 22%;
     margin-right: 30px;
     margin-top: 15px;
-    font-size: 16px;
+    font-size: 14px;
     color: black;
+    font-weight: 600;
 }
 
 @media (min-width: 750px) and (max-width: 800px){
@@ -167,6 +168,12 @@
 
 }
 
+.sep{
+    height: 15px;
+    border-right: 1.5px solid grey;
+    margin-top: 5px;
+
+}
 .card .sep{
     height: 15px;
     border-right: 2px solid grey;
@@ -190,17 +197,36 @@
     .filters{
         display: none;
     }
-    .extras-link{
+    .extras-link, .title-desc{
         display: none;
     }
+
     
+}
+@media( max-width: 990px){
+    .cus-nav{
+        display: none;
+    }
+}
+@media (min-width: 990px){
+    .mob-header{
+        display: none;
+    }
 }
 @media(min-width: 700px){
     .mob-buttons{
         display: none;
     }
 }
-
+@media(min-width: 770px){
+    .cus-sorting{
+        margin-bottom: -25px;
+    }
+}
+.cus-sorting select{
+    border: none;
+    font-weight: 500;
+}
 .filters h6{
     font-size: 0.8rem;
 }
@@ -217,18 +243,36 @@
         padding-left: 80px;
     }
 }
+.filters-top-sidebar {
+    font-size: 13px;
+    margin-bottom: 3.125rem;
+    width: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 100%;
+    flex: 1 0 100%;
+    padding-right: var(--half-gutter-size);
+    padding-left: var(--half-gutter-size);
+}
 
 .cus-filters .accordion-button:not(.collapsed) {
     background-color: transparent!important;
 }
 .cus-filters .accordion-button{
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: bold;
 }
 
 .cus-filters .accordion-button:focus{
     outline: none;
     border: none;
     box-shadow: none;
+}
+
+form.woocommerce-ordering.rey-loopSelectList {
+    display: flex;
+    position: relative;
+    padding-left: 685px;
+    flex-wrap: wrap;
 }
 
 .product .price-original{
@@ -248,3 +292,39 @@
     padding-left: 5px;
     padding-right: 5px;
 }
+.filters-top-sidebar {
+    font-size: 13px;
+    margin-bottom: 3.125rem;
+    width: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 100%;
+    flex: 1 0 100%;
+    padding-right: var(--half-gutter-size);
+    padding-left: var(--half-gutter-size);
+}
+@media(max-width: 550px){
+    .cus-sorting{
+        display: none;
+    }
+}
+
+/* mobile header  */
+    .first-search{
+        border-bottom: 1px solid #d9d6d6;
+    }    
+    .s-bar{
+        border: none;
+    }
+    .s-bar:focus{
+        border: none;
+        outline: 0;
+    }
+    .second-search{
+        border-bottom: 1px solid #d9d6d6;
+    }
+    .third-search .btn-filters button{
+        border: none;
+        padding: 6px 10px;
+        margin-bottom: 6px;
+    }
+
