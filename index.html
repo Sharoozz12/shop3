@@ -1,891 +1,1391 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- bootstrap -->
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- custom css -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
     <!-- range slider css  -->
-    <link rel="stylesheet" href="assets/range_slider/css/style.css">
+    <link rel="stylesheet" href="assets/range_slider/css/style.css" />
     <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&family=Poppins:wght@200;400;700;800&family=Reem+Kufi:wght@700&family=Urbanist:ital,wght@0,200;0,300;0,400;0,500;0,800;0,900;1,200&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&family=Poppins:wght@200;400;700;800&family=Reem+Kufi:wght@700&family=Urbanist:ital,wght@0,200;0,300;0,400;0,500;0,800;0,900;1,200&display=swap"
+      rel="stylesheet"
+    />
 
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <!-- header -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light side-p">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div style="flex-grow: 1;">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Design</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Clothing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Shoes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Accessories</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Face + body</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Sportswear</a>
-                        </li>
-                    </ul>
-                </div>
-                <div style="flex-grow: 1;">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                </div>
-                <div class="d-flex justify-content-end" style="flex-grow: 1;">
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    </form>
-                    <div class="d-flex align-items-center">
-                        <div class="px-1">
-                            <span>
-                                <img src="assets/icons/shop.svg" alt="">
-                            </span>
-                        </div>
-                        <div class="px-1">
-                            <span>
-                                <img src="assets/icons/heart.svg" alt="">
-                            </span>
-                        </div>
-                        <div class="px-1">
-                            <span>
-                                <img src="assets/icons/acc.svg" alt="">
-                            </span>
-                        </div>
-                    </div>
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light side-p cus-nav">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div style="flex-grow: 1">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >IV Design</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Clothing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shoes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Accessories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Face + body</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sportswear</a>
+              </li>
+            </ul>
+          </div>
+          <div style="flex-grow: 1">
+            <a class="navbar-brand" href="#">Navbar</a>
+          </div>
+          <div class="d-flex justify-content-end" style="flex-grow: 1">
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </form>
+            <div class="d-flex align-items-center">
+              <div class="px-1">
+                <span>
+                  <img src="assets/icons/shop.svg" alt="" />
+                </span>
+              </div>
+              <div class="px-1">
+                <span>
+                  <img src="assets/icons/heart.svg" alt="" />
+                </span>
+              </div>
+              <div class="px-1">
+                <span>
+                  <img src="assets/icons/acc.svg" alt="" />
+                </span>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </nav>
     <!-- header ends -->
 
+    <!-- mob header  -->
+    <div class="mob-header">
+      <div class="first-search d-flex justify-content-between py-2">
+        <div class="ps-1">
+          <img src="assets/imgs/back.png" alt="" style="width: 25px" />
+        </div>
+        <div>
+          <h6>Shop all shorts</h6>
+        </div>
+        <div class="pe-2">
+          <span>
+            <img src="assets/icons/shop.svg" alt="" />
+          </span>
+        </div>
+      </div>
+      <div class="second-search py-2">
+        <div class="mob-search d-flex justify-content-between px-2">
+          <div class="d-flex w-100">
+            <img
+              src="assets/imgs/search.png"
+              alt=""
+              style="width: 25px; height: 25px"
+            />
+            <form class="d-flex w-100">
+              <input
+                class="px-1 w-100 s-bar"
+                type="search"
+                placeholder="Search"
+              />
+            </form>
+          </div>
+          <div class="d-flex" style="font-size: 14px">
+            <span>Filters</span>
+            <div class="sep mx-2"></div>
+            <span>Sort</span>
+          </div>
+        </div>
+      </div>
+      <div class="third-search p-2" style="font-size: 14px">
+        <div class="btn-filters">
+          <button>Dresses & Jumpsuits</button>
+          <button>Tops & Jackets</button>
+          <button>Bottoms</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- mob header end -->
 
     <!-- body  -->
     <div class="side-p Mainbody">
-
-        <!-- title & desc  -->
+      <!-- title & desc  -->
+      <div class="title-desc">
         <div class="title">
-            <h1>activewear</h1>
+          <h1>activewear</h1>
         </div>
         <div>
-            <p class="tile-desc">
-                "Whether you’re into intense HIIT classes, home workouts or you just like that athleisure aesthetic,
-                take your pick of trainers, gym leggings and more from our edit of women’s activewear. Add a splash of
-                colour to your sportswear with bold, printed pieces from IVLOO 4505, or browse our range of super-soft
-                leggings and seamless sports bras, ideal for days off. Scroll women’s sportswear from adidas Performance
-                for comfy designs and fresh motivation – take your pick from leggings and training vests that will soon
-                be your new gym staples. And, for cool, classic fitness clothing, Nike Training is a go-to brand for
-                workout essentials. Browse our women’s sport clothing and get ready to raise your game."
-            </p>
+          <p class="tile-desc">
+            "Whether you’re into intense HIIT classes, home workouts or you just
+            like that athleisure aesthetic, take your pick of trainers, gym
+            leggings and more from our edit of women’s activewear. Add a splash
+            of colour to your sportswear with bold, printed pieces from IVLOO
+            4505, or browse our range of super-soft leggings and seamless sports
+            bras, ideal for days off. Scroll women’s sportswear from adidas
+            Performance for comfy designs and fresh motivation – take your pick
+            from leggings and training vests that will soon be your new gym
+            staples. And, for cool, classic fitness clothing, Nike Training is a
+            go-to brand for workout essentials. Browse our women’s sport
+            clothing and get ready to raise your game."
+          </p>
         </div>
-        <!-- title & decs end  -->
+      </div>
+      <!-- title & decs end  -->
+
+      <div class="extras-link">
+        <ul class="single-link">
+          <li>Armbrands</li>
+          <li>Backpacks</li>
+          <li>Bags</li>
+          <li>Beanies</li>
+          <li>Belly chains</li>
+          <li>Bikni bottoms</li>
+          <li>Bikni Tops</li>
+          <li>Biknis</li>
+          <li>Bodies</li>
+          <li>Body Chains</li>
+          <li>Boots</li>
+          <li>Bottles</li>
+          <li>Bralets</li>
+          <li>Bras</li>
+          <li>Briefs</li>
+          <li>Bum Bags</li>
+          <li>Camis</li>
+          <li>Caps</li>
+          <li>Co-ords</li>
+          <li>Coats</li>
+          <li>Compression Tights</li>
+          <li>Crop Tops</li>
+          <li>Dresses</li>
+          <li>Face Coverings</li>
+          <li>Fitness Aids</li>
+          <li>Fleeces</li>
+          <li>Flip Flops</li>
+          <li>Gilets</li>
+          <li>Gloves</li>
+          <li>Hairbands</li>
+          <li>Hats</li>
+          <li>Headbands</li>
+          <li>Headscarves</li>
+          <li>Hoodies</li>
+          <li>Jackets</li>
+          <li>Jeans</li>
+          <li>Joggers</li>
+          <li>Jumpers</li>
+          <li>Jumpsuits</li>
+          <li>Leggings</li>
+          <li>Lingerie Bralets</li>
+          <li>Mats</li>
+          <li>Neck Warmers</li>
+          <li>Playsuits</li>
+          <li>Polo Shirts</li>
+          <li>Sandals</li>
+          <li>Scarves</li>
+          <li>Shoes</li>
+          <li>Shorts</li>
+          <li>Ski Jackets</li>
+        </ul>
+      </div>
+
+      <div class="cus-sorting">
+        <div class="rey-loopHeader --has-filter-btn --active-pos-above_grid">
+            <form class="woocommerce-ordering rey-loopSelectList justify-content-end p-0" method="get">
+              <label class="btn btn-line" for="catalog-orderby-list">
+                <!-- <span>Default sorting</span> -->
+                <select
+                  name="orderby"
+                  class="orderby m-1"
+                  aria-label="Shop order"
+                  id="catalog-orderby-list"
+                >
+                  <option value="menu_order" selected="selected">
+                    DEFAULT SORTING
+                  </option>
+                  <option value="popularity">By popularity</option>
+                  <option value="rating">Average rating</option>
+                  <option value="date">latest</option>
+                  <option value="price">low to high</option>
+                  <option value="price-desc">high to low</option>
+                </select>
+              </label>
+    
+              <input type="hidden" name="paged" value="1" />
+            </form>
+            <div
+              class="woocommerce reyajfilter-ajax-term-filter widget widget_reyajfilter-active-filters"
+            ></div>
+          </div>
+
+      </div>
+      
 
 
-        <div class="extras-link">
-            <ul class="single-link">
-                <li>Armbrands</li>
-                <li>Backpacks</li>
-                <li>Bags</li>
-                <li>Beanies</li>
-                <li>Belly chains</li>
-                <li>Bikni bottoms</li>
-                <li>Bikni Tops</li>
-                <li>Biknis</li>
-                <li>Armbrands</li>
-                <li>Backpacks</li>
-                <li>Bags</li>
-                <li>Beanies</li>
-                <li>Belly chains</li>
-                <li>Bikni bottoms</li>
-                <li>Bikni Tops</li>
-                <li>Biknis</li>
-                <li>Armbrands</li>
-                <li>Backpacks</li>
-                <li>Bags</li>
-                <li>Beanies</li>
-                <li>Belly chains</li>
-                <li>Bikni bottoms</li>
-                <li>Bikni Tops</li>
-                <li>Biknis</li>
-            </ul>
-        </div>
-
-        <div class="product pt-5">
-            <div class="d-flex row m-0 p-0">
-                <div class="filters  col-lg-2 p-0 col-12 pe-4">
-                   
-                    <div class="accordion accordion-flush cus-filters" id="accordionFlushExample">
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="flush-headingEight">
-                            <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
-                              CATOGARIES
-                            </button>
-                          </h2>
-                          <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" >
-                            <div class="accordion-body px-0">
-                                <div class="categories">
-                                    <div class="ps-1">
-                                        <p>Shoes</p>
-                                        <p>Clothing</p>
-                                        <p>Watches</p>
-                                        <p>Bags</p>
-                                        <p>Accessories</p>
-                                    </div>
-                                </div>
-                            </div>
-                          </div>
+      <div class="product">
+        <div class="d-flex row m-0 p-0">
+          <div class="filters col-lg-2 p-0 col-12 pe-4">
+            <div
+              class="accordion accordion-flush cus-filters"
+              id="accordionFlushExample"
+            >
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingEight">
+                  <button
+                    class="accordion-button collapsed px-0"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseEight"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseEight"
+                  >
+                    CATOGARIES
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseEight"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingEight"
+                >
+                  <div class="accordion-body px-0">
+                    <div class="categories">
+                      <div class="ps-1">
+                        <p>Shoes</p>
+                        <p>Clothing</p>
+                        <p>Watches</p>
+                        <p>Bags</p>
+                        <p>Accessories</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingNine">
+                  <button
+                    class="accordion-button collapsed px-0"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseNine"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseNine"
+                  >
+                    PRICING
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseNine"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingNine"
+                >
+                  <div class="accordion-body px-0">
+                    <!-- Range Slider HTML -->
+                    <div slider id="slider-distance">
+                      <div>
+                        <div inverse-left style="width: 70%"></div>
+                        <div inverse-right style="width: 70%"></div>
+                        <div range style="left: 30%; right: 40%"></div>
+                        <span thumb style="left: 30%"></span>
+                        <span thumb style="left: 60%"></span>
+                        <div sign style="left: 30%">
+                          <span id="value">30</span>
                         </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="flush-headingNine">
-                            <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
-                              PRICING
-                            </button>
-                          </h2>
-                          <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" >
-                            <div class="accordion-body px-0">
-
-
-
-                                            <!-- Range Slider HTML -->
-<div slider id="slider-distance">
-    <div>
-      <div inverse-left style="width:70%;"></div>
-      <div inverse-right style="width:70%;"></div>
-      <div range style="left:30%;right:40%;"></div>
-      <span thumb style="left:30%;"></span>
-      <span thumb style="left:60%;"></span>
-      <div sign style="left:30%;">
-        <span id="value">30</span>
-      </div>
-      <div sign style="left:60%;">
-        <span id="value">60</span>
-      </div>
-    </div>
-    <input type="range" tabindex="0" value="30" max="100" min="0" step="1" oninput="
+                        <div sign style="left: 60%">
+                          <span id="value">60</span>
+                        </div>
+                      </div>
+                      <input
+                        type="range"
+                        tabindex="0"
+                        value="30"
+                        max="100"
+                        min="0"
+                        step="1"
+                        oninput="
     this.value=Math.min(this.value,this.parentNode.childNodes[5].value-1);
     var value=(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.value)-(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.min);
     var children = this.parentNode.childNodes[1].childNodes;
     children[1].style.width=value+'%';
     children[5].style.left=value+'%';
     children[7].style.left=value+'%';children[11].style.left=value+'%';
-    children[11].childNodes[1].innerHTML=this.value;" />
-  
-    <input type="range" tabindex="0" value="60" max="100" min="0" step="1" oninput="
+    children[11].childNodes[1].innerHTML=this.value;"
+                      />
+
+                      <input
+                        type="range"
+                        tabindex="0"
+                        value="60"
+                        max="100"
+                        min="0"
+                        step="1"
+                        oninput="
     this.value=Math.max(this.value,this.parentNode.childNodes[3].value-(-1));
     var value=(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.value)-(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.min);
     var children = this.parentNode.childNodes[1].childNodes;
     children[3].style.width=(100-value)+'%';
     children[5].style.right=(100-value)+'%';
     children[9].style.left=value+'%';children[13].style.left=value+'%';
-    children[13].childNodes[1].innerHTML=this.value;" />
-  </div>
+    children[13].childNodes[1].innerHTML=this.value;"
+                      />
+                    </div>
                     <!-- End Range Slider HTML -->
-                                
-
-
-
-
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="flush-headingSeven">
-                            <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
-                              SIZES
-                            </button>
-                          </h2>
-                          <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" >
-                            <div class="accordion-body px-0">
-                                <div class="size">
-                                    <div class="sizes ps-1">
-                                        <div>26</div>
-                                        <div>28</div>
-                                        <div>30</div>
-                                        <div>32</div>
-                                        <div>34</div>
-                                        <div>36</div>
-                                        <div>38</div>
-                                        <div>40</div>
-                                        <div>42</div>
-                                    </div>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="flush-headingSix">
-                            <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-                              BRANDS
-                            </button>
-                          </h2>
-                          <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" >
-                            <div class="accordion-body px-0">
-                                <div class="genders">
-                                    <div class="ps-1">
-                                        <div class="form-check d-flex justify-content-between">
-                                            <div>
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                    Samsung
-                                                </label>
-                                            </div>
-                                            <div>
-                                                <label for="">121</label>
-                                            </div>
-                                        </div>
-                                        <div class="form-check d-flex justify-content-between">
-                                            <div>
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                    Apple
-                                                </label>
-                                            </div>
-                                            <div>
-                                                <label for="">11</label>
-                                            </div>
-                                        </div>
-                                        <div class="form-check d-flex justify-content-between">
-                                            <div>
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                    Nike
-                                                </label>
-                                            </div>
-                                            <div>
-                                                <label for="">221</label>
-                                            </div>
-                                        </div>
-                                        <div class="form-check d-flex justify-content-between">
-                                            <div>
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                    Reebok
-                                                </label>
-                                            </div>
-                                            <div>
-                                                <label for="">120</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="flush-headingfive">
-                            <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                              GENDERS
-                            </button>
-                          </h2>
-                          <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"  >
-                            <div class="accordion-body px-0">
-                                <div class="genders">
-                                    <div class="ps-1">
-                                        <div class="form-check d-flex justify-content-between">
-                                            <div>
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                    All
-                                                </label>
-                                            </div>
-                                            <div>
-                                                <label for="">121</label>
-                                            </div>
-                                        </div>
-                                        <div class="form-check d-flex justify-content-between">
-                                            <div>
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                    MEN
-                                                </label>
-                                            </div>
-                                            <div>
-                                                <label for="">11</label>
-                                            </div>
-                                        </div>
-                                        <div class="form-check d-flex justify-content-between">
-                                            <div>
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                    WOMEN
-                                                </label>
-                                            </div>
-                                            <div>
-                                                <label for="">221</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="flush-headingOne">
-                            <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                              DISCOUNT
-                            </button>
-                          </h2>
-                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"  >
-                            <div class="accordion-body px-0">Placeholder content </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="flush-headingTwo">
-                            <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                              TYPE
-                            </button>
-                          </h2>
-                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"  >
-                            <div class="accordion-body px-0">Placeholder content </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="flush-headingThree">
-                            <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                             OCCASION
-                            </button>
-                          </h2>
-                          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"  >
-                            <div class="accordion-body px-0">Placeholder content</div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="flush-headingFour">
-                            <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                             COLORS
-                            </button>
-                          </h2>
-                          <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"  >
-                            <div class="accordion-body px-0">
-                                <div class="color">
-                                    <div class="ps-1 colors">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                    </div>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>                   
-
-                    <div class="pb-5"></div>
-
+                  </div>
                 </div>
-
-
-                <div class="p-0 col-lg-10 col-12">
-                    <div class="row  m-0 ">
-                        <div class="col-lg-4 col-12 p-0 mt-4">
-                            <div class="card">
-                                <img src="assets/icons/heart.svg" alt="" class="heart">
-                                <img src="assets/imgs/product1.jpg" class="card-img-top" alt="...">
-                                <div class="d-flex mb-3 vid">
-                                    <div class="w-50 text-center ">
-                                        <img src="assets/imgs/play.png" alt="" style="width:20px;">
-                                        VIDEO
-                                    </div>
-                                    <div class="sep"></div>
-                                    <div class="w-50 text-center">
-                                        <img src="assets/imgs/star--v1.png" class="star" alt="">
-                                        <img src="assets/imgs/star--v1.png" class="star" alt="">
-                                        <img src="assets/imgs/star--v1.png" class="star" alt="">
-                                        (8 reviews)
-                                    </div>
-                                </div>
-
-                                <div class="w-25 m-auto" style="border: 1px solid grey; border-radius: 50%;"></div>
-                                <div class="card-body">
-                                    <h5>THE NORTH FACE</h5>
-                                    <p class="card-text m-0">Some quick example text .</p>
-                                    <span class="price-original me-2">99.99 AED</span>
-                                    <span class="price-discount me-2">60.21 AED</span>
-                                    <span class="price-save">Save 12.2</span>
-
-                                    
-
-                                    <div class="mob-buttons">                    
-                                        <div class="d-flex">
-                                            <div class="dropdown">
-                                                <button class="btn-size dropdown-toggle" href="#" role="button"
-                                                    id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    Size
-                                            </button>
-                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                    <li><a class="dropdown-item" href="#">28</a></li>
-                                                    <li><a class="dropdown-item" href="#">30</a></li>
-                                                    <li><a class="dropdown-item" href="#">32</a></li>
-                                                </ul>
-                                            </div>
-    
-                                            <button type="button" class="btn-addToCard">ADD TO BAG</button>
-                                            <button class="btn-heart"><img src="assets/icons/heart.svg" alt=""></button>   
-                                        </div>
-                                        <button class="btn-s-guide mt-2 mb-3">SIZE GUIDE</button>
-
-                                        <div class="w-50 m-auto" style="border: 1px solid black; border-radius: 50%;"></div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-12 p-0 mt-4">
-                            <div class="card">
-                                <img src="assets/icons/heart.svg" alt="" class="heart">
-                                <img src="assets/imgs/product2.jpg" class="card-img-top" alt="...">
-                                <div class="d-flex mb-3 vid">
-                                    <div class="w-50 text-center ">
-                                        <img src="assets/imgs/play.png" alt="" style="width:20px;">
-                                        VIDEO
-                                    </div>
-                                    <div class="sep"></div>
-                                    <div class="w-50 text-center">
-                                        <img src="assets/imgs/star--v1.png" class="star" alt="">
-                                        <img src="assets/imgs/star--v1.png" class="star" alt="">
-                                        <img src="assets/imgs/star--v1.png" class="star" alt="">
-                                        (8 reviews)
-                                    </div>
-                                </div>
-
-                                <div class="w-25 m-auto" style="border: 1px solid grey; border-radius: 50%;"></div>
-                                <div class="card-body">
-                                    <h5>THE NORTH FACE</h5>
-                                    <p class="card-text m-0">Some quick example text .</p>
-                                    <p class="card-price">99.99</p>
-
-                                    
-
-                                    <div class="mob-buttons">                    
-                                        <div class="d-flex">
-                                            <div class="dropdown">
-                                                <button class="btn-size dropdown-toggle" href="#" role="button"
-                                                    id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    Size
-                                            </button>
-                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                    <li><a class="dropdown-item" href="#">28</a></li>
-                                                    <li><a class="dropdown-item" href="#">30</a></li>
-                                                    <li><a class="dropdown-item" href="#">32</a></li>
-                                                </ul>
-                                            </div>
-    
-                                            <button type="button" class="btn-addToCard">ADD TO BAG</button>
-                                            <button class="btn-heart"><img src="assets/icons/heart.svg" alt=""></button>   
-                                        </div>
-                                        <button class="btn-s-guide mt-2 mb-3">SIZE GUIDE</button>
-
-                                        <div class="w-50 m-auto" style="border: 1px solid black; border-radius: 50%;"></div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-12 p-0 mt-4">
-                            <div class="card">
-                                <img src="assets/icons/heart.svg" alt="" class="heart">
-                                <img src="assets/imgs/product3.jpg" class="card-img-top" alt="...">
-                                <div class="d-flex mb-3 vid">
-                                    <div class="w-50 text-center ">
-                                        <img src="assets/imgs/play.png" alt="" style="width:20px;">
-                                        VIDEO
-                                    </div>
-                                    <div class="sep"></div>
-                                    <div class="w-50 text-center">
-                                        <img src="assets/imgs/star--v1.png" class="star" alt="">
-                                        <img src="assets/imgs/star--v1.png" class="star" alt="">
-                                        <img src="assets/imgs/star--v1.png" class="star" alt="">
-                                        (8 reviews)
-                                    </div>
-                                </div>
-
-                                <div class="w-25 m-auto" style="border: 1px solid grey; border-radius: 50%;"></div>
-                                <div class="card-body">
-                                    <h5>THE NORTH FACE</h5>
-                                    <p class="card-text m-0">Some quick example text .</p>
-                                    <span class="price-original me-2">99.99 AED</span>
-                                    <span class="price-discount me-2">60.21 AED</span>
-                                    <span class="price-save">Save 10</span>
-
-
-                                    
-
-                                    <div class="mob-buttons">                    
-                                        <div class="d-flex">
-                                            <div class="dropdown">
-                                                <button class="btn-size dropdown-toggle" href="#" role="button"
-                                                    id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    Size
-                                            </button>
-                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                    <li><a class="dropdown-item" href="#">28</a></li>
-                                                    <li><a class="dropdown-item" href="#">30</a></li>
-                                                    <li><a class="dropdown-item" href="#">32</a></li>
-                                                </ul>
-                                            </div>
-    
-                                            <button type="button" class="btn-addToCard">ADD TO BAG</button>
-                                            <button class="btn-heart"><img src="assets/icons/heart.svg" alt=""></button>   
-                                        </div>
-                                        <button class="btn-s-guide mt-2 mb-3">SIZE GUIDE</button>
-
-                                        <div class="w-50 m-auto" style="border: 1px solid black; border-radius: 50%;"></div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>                      
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingSeven">
+                  <button
+                    class="accordion-button collapsed px-0"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseSeven"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseSeven"
+                  >
+                    SIZES
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseSeven"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingSeven"
+                >
+                  <div class="accordion-body px-0">
+                    <div class="size">
+                      <div class="sizes ps-1">
+                        <div>26</div>
+                        <div>28</div>
+                        <div>30</div>
+                        <div>32</div>
+                        <div>34</div>
+                        <div>36</div>
+                        <div>38</div>
+                        <div>40</div>
+                        <div>42</div>
+                      </div>
                     </div>
-                    <div class="row  m-0 ">
-                        <div class="col-lg-4 col-12 p-0 mt-4">
-                            <div class="card">
-                                <img src="assets/icons/heart.svg" alt="" class="heart">
-                                <img src="assets/imgs/product1.jpg" class="card-img-top" alt="...">
-                                <div class="d-flex mb-3 vid">
-                                    <div class="w-50 text-center ">
-                                        <img src="assets/imgs/play.png" alt="" style="width:20px;">
-                                        VIDEO
-                                    </div>
-                                    <div class="sep"></div>
-                                    <div class="w-50 text-center">
-                                        <img src="assets/imgs/star--v1.png" class="star" alt="">
-                                        <img src="assets/imgs/star--v1.png" class="star" alt="">
-                                        <img src="assets/imgs/star--v1.png" class="star" alt="">
-                                        (8 reviews)
-                                    </div>
-                                </div>
-
-                                <div class="w-25 m-auto" style="border: 1px solid grey; border-radius: 50%;"></div>
-                                <div class="card-body">
-                                    <h5>THE NORTH FACE</h5>
-                                    <p class="card-text m-0">Some quick example text .</p>
-                                    <p class="card-price">99.99</p>
-
-                                    
-
-                                    <div class="mob-buttons">                    
-                                        <div class="d-flex">
-                                            <div class="dropdown">
-                                                <button class="btn-size dropdown-toggle" href="#" role="button"
-                                                    id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    Size
-                                            </button>
-                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                    <li><a class="dropdown-item" href="#">28</a></li>
-                                                    <li><a class="dropdown-item" href="#">30</a></li>
-                                                    <li><a class="dropdown-item" href="#">32</a></li>
-                                                </ul>
-                                            </div>
-    
-                                            <button type="button" class="btn-addToCard">ADD TO BAG</button>
-                                            <button class="btn-heart"><img src="assets/icons/heart.svg" alt=""></button>   
-                                        </div>
-                                        <button class="btn-s-guide mt-2 mb-3">SIZE GUIDE</button>
-
-                                        <div class="w-50 m-auto" style="border: 1px solid black; border-radius: 50%;"></div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-12 p-0 mt-4">
-                            <div class="card">
-                                <img src="assets/icons/heart.svg" alt="" class="heart">
-                                <img src="assets/imgs/product2.jpg" class="card-img-top" alt="...">
-                                <div class="d-flex mb-3 vid">
-                                    <div class="w-50 text-center ">
-                                        <img src="assets/imgs/play.png" alt="" style="width:20px;">
-                                        VIDEO
-                                    </div>
-                                    <div class="sep"></div>
-                                    <div class="w-50 text-center">
-                                        <img src="assets/imgs/star--v1.png" class="star" alt="">
-                                        <img src="assets/imgs/star--v1.png" class="star" alt="">
-                                        <img src="assets/imgs/star--v1.png" class="star" alt="">
-                                        (8 reviews)
-                                    </div>
-                                </div>
-
-                                <div class="w-25 m-auto" style="border: 1px solid grey; border-radius: 50%;"></div>
-                                <div class="card-body">
-                                    <h5>THE NORTH FACE</h5>
-                                    <p class="card-text m-0">Some quick example text .</p>
-                                    <span class="price-original me-2">99.99 AED</span>
-                                    <span class="price-discount me-2">60.21 AED</span>
-                                    <span class="price-save">Save 20</span>
-                                    
-
-                                    
-
-                                    <div class="mob-buttons">                    
-                                        <div class="d-flex">
-                                            <div class="dropdown">
-                                                <button class="btn-size dropdown-toggle" href="#" role="button"
-                                                    id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    Size
-                                            </button>
-                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                    <li><a class="dropdown-item" href="#">28</a></li>
-                                                    <li><a class="dropdown-item" href="#">30</a></li>
-                                                    <li><a class="dropdown-item" href="#">32</a></li>
-                                                </ul>
-                                            </div>
-    
-                                            <button type="button" class="btn-addToCard">ADD TO BAG</button>
-                                            <button class="btn-heart"><img src="assets/icons/heart.svg" alt=""></button>   
-                                        </div>
-                                        <button class="btn-s-guide mt-2 mb-3">SIZE GUIDE</button>
-
-                                        <div class="w-50 m-auto" style="border: 1px solid black; border-radius: 50%;"></div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-12 p-0 mt-4">
-                            <div class="card">
-                                <img src="assets/icons/heart.svg" alt="" class="heart">
-                                <img src="assets/imgs/product3.jpg" class="card-img-top" alt="...">
-                                <div class="d-flex mb-3 vid">
-                                    <div class="w-50 text-center ">
-                                        <img src="assets/imgs/play.png" alt="" style="width:20px;">
-                                        VIDEO
-                                    </div>
-                                    <div class="sep"></div>
-                                    <div class="w-50 text-center">
-                                        <img src="assets/imgs/star--v1.png" class="star" alt="">
-                                        <img src="assets/imgs/star--v1.png" class="star" alt="">
-                                        <img src="assets/imgs/star--v1.png" class="star" alt="">
-                                        (8 reviews)
-                                    </div>
-                                </div>
-
-                                <div class="w-25 m-auto" style="border: 1px solid grey; border-radius: 50%;"></div>
-                                <div class="card-body">
-                                    <h5>THE NORTH FACE</h5>
-                                    <p class="card-text m-0">Some quick example text .</p>
-                                    <span class="price-original me-2">99.99 AED</span>
-                                    <span class="price-discount me-2">60.21 AED</span>
-                                    <span class="price-save">Save 20.23</span>
-
-                                    
-
-                                    <div class="mob-buttons">                    
-                                        <div class="d-flex">
-                                            <div class="dropdown">
-                                                <button class="btn-size dropdown-toggle" href="#" role="button"
-                                                    id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    Size
-                                            </button>
-                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                    <li><a class="dropdown-item" href="#">28</a></li>
-                                                    <li><a class="dropdown-item" href="#">30</a></li>
-                                                    <li><a class="dropdown-item" href="#">32</a></li>
-                                                </ul>
-                                            </div>
-    
-                                            <button type="button" class="btn-addToCard">ADD TO BAG</button>
-                                            <button class="btn-heart"><img src="assets/icons/heart.svg" alt=""></button>   
-                                        </div>
-                                        <button class="btn-s-guide mt-2 mb-3">SIZE GUIDE</button>
-
-                                        <div class="w-50 m-auto" style="border: 1px solid black; border-radius: 50%;"></div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>                      
-                    </div>
-                    <div class="row  m-0 ">
-                        <div class="col-lg-4 col-12 p-0 mt-4">
-                            <div class="card">
-                                <img src="assets/icons/heart.svg" alt="" class="heart">
-                                <img src="assets/imgs/product1.jpg" class="card-img-top" alt="...">
-                                <div class="d-flex mb-3 vid">
-                                    <div class="w-50 text-center ">
-                                        <img src="assets/imgs/play.png" alt="" style="width:20px;">
-                                        VIDEO
-                                    </div>
-                                    <div class="sep"></div>
-                                    <div class="w-50 text-center">
-                                        <img src="assets/imgs/star--v1.png" class="star" alt="">
-                                        <img src="assets/imgs/star--v1.png" class="star" alt="">
-                                        <img src="assets/imgs/star--v1.png" class="star" alt="">
-                                        (8 reviews)
-                                    </div>
-                                </div>
-
-                                <div class="w-25 m-auto" style="border: 1px solid grey; border-radius: 50%;"></div>
-                                <div class="card-body">
-                                    <h5>THE NORTH FACE</h5>
-                                    <p class="card-text m-0">Some quick example text .</p>
-                                    <p class="card-price">99.99</p>
-
-                                    
-
-                                    <div class="mob-buttons">                    
-                                        <div class="d-flex">
-                                            <div class="dropdown">
-                                                <button class="btn-size dropdown-toggle" href="#" role="button"
-                                                    id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    Size
-                                            </button>
-                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                    <li><a class="dropdown-item" href="#">28</a></li>
-                                                    <li><a class="dropdown-item" href="#">30</a></li>
-                                                    <li><a class="dropdown-item" href="#">32</a></li>
-                                                </ul>
-                                            </div>
-    
-                                            <button type="button" class="btn-addToCard">ADD TO BAG</button>
-                                            <button class="btn-heart"><img src="assets/icons/heart.svg" alt=""></button>   
-                                        </div>
-                                        <button class="btn-s-guide mt-2 mb-3">SIZE GUIDE</button>
-
-                                        <div class="w-50 m-auto" style="border: 1px solid black; border-radius: 50%;"></div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-12 p-0 mt-4">
-                            <div class="card">
-                                <img src="assets/icons/heart.svg" alt="" class="heart">
-                                <img src="assets/imgs/product2.jpg" class="card-img-top" alt="...">
-                                <div class="d-flex mb-3 vid">
-                                    <div class="w-50 text-center ">
-                                        <img src="assets/imgs/play.png" alt="" style="width:20px;">
-                                        VIDEO
-                                    </div>
-                                    <div class="sep"></div>
-                                    <div class="w-50 text-center">
-                                        <img src="assets/imgs/star--v1.png" class="star" alt="">
-                                        <img src="assets/imgs/star--v1.png" class="star" alt="">
-                                        <img src="assets/imgs/star--v1.png" class="star" alt="">
-                                        (8 reviews)
-                                    </div>
-                                </div>
-
-                                <div class="w-25 m-auto" style="border: 1px solid grey; border-radius: 50%;"></div>
-                                <div class="card-body">
-                                    <h5>THE NORTH FACE</h5>
-                                    <p class="card-text m-0">Some quick example text .</p>
-                                    <p class="card-price">99.99</p>
-
-                                    
-
-                                    <div class="mob-buttons">                    
-                                        <div class="d-flex">
-                                            <div class="dropdown">
-                                                <button class="btn-size dropdown-toggle" href="#" role="button"
-                                                    id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    Size
-                                            </button>
-                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                    <li><a class="dropdown-item" href="#">28</a></li>
-                                                    <li><a class="dropdown-item" href="#">30</a></li>
-                                                    <li><a class="dropdown-item" href="#">32</a></li>
-                                                </ul>
-                                            </div>
-    
-                                            <button type="button" class="btn-addToCard">ADD TO BAG</button>
-                                            <button class="btn-heart"><img src="assets/icons/heart.svg" alt=""></button>   
-                                        </div>
-                                        <button class="btn-s-guide mt-2 mb-3">SIZE GUIDE</button>
-
-                                        <div class="w-50 m-auto" style="border: 1px solid black; border-radius: 50%;"></div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-12 p-0 mt-4">
-                            <div class="card">
-                                <img src="assets/icons/heart.svg" alt="" class="heart">
-                                <img src="assets/imgs/product3.jpg" class="card-img-top" alt="...">
-                                <div class="d-flex mb-3 vid">
-                                    <div class="w-50 text-center ">
-                                        <img src="assets/imgs/play.png" alt="" style="width:20px;">
-                                        VIDEO
-                                    </div>
-                                    <div class="sep"></div>
-                                    <div class="w-50 text-center">
-                                        <img src="assets/imgs/star--v1.png" class="star" alt="">
-                                        <img src="assets/imgs/star--v1.png" class="star" alt="">
-                                        <img src="assets/imgs/star--v1.png" class="star" alt="">
-                                        (8 reviews)
-                                    </div>
-                                </div>
-
-                                <div class="w-25 m-auto" style="border: 1px solid grey; border-radius: 50%;"></div>
-                                <div class="card-body">
-                                    <h5>THE NORTH FACE</h5>
-                                    <p class="card-text m-0">Some quick example text .</p>
-                                    <p class="card-price">99.99</p>
-
-                                    
-
-                                    <div class="mob-buttons">                    
-                                        <div class="d-flex">
-                                            <div class="dropdown">
-                                                <button class="btn-size dropdown-toggle" href="#" role="button"
-                                                    id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    Size
-                                            </button>
-                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                    <li><a class="dropdown-item" href="#">28</a></li>
-                                                    <li><a class="dropdown-item" href="#">30</a></li>
-                                                    <li><a class="dropdown-item" href="#">32</a></li>
-                                                </ul>
-                                            </div>
-    
-                                            <button type="button" class="btn-addToCard">ADD TO BAG</button>
-                                            <button class="btn-heart"><img src="assets/icons/heart.svg" alt=""></button>   
-                                        </div>
-                                        <button class="btn-s-guide mt-2 mb-3">SIZE GUIDE</button>
-
-                                        <div class="w-50 m-auto" style="border: 1px solid black; border-radius: 50%;"></div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>                      
-                    </div>
+                  </div>
                 </div>
-
-
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingSix">
+                  <button
+                    class="accordion-button collapsed px-0"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseSix"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseSix"
+                  >
+                    BRANDS
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseSix"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingSix"
+                >
+                  <div class="accordion-body px-0">
+                    <div class="genders">
+                      <div class="ps-1">
+                        <div class="form-check d-flex justify-content-between">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexCheckDefault"
+                            >
+                              Samsung
+                            </label>
+                          </div>
+                          <div>
+                            <label for="">121</label>
+                          </div>
+                        </div>
+                        <div class="form-check d-flex justify-content-between">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexCheckDefault"
+                            >
+                              Apple
+                            </label>
+                          </div>
+                          <div>
+                            <label for="">11</label>
+                          </div>
+                        </div>
+                        <div class="form-check d-flex justify-content-between">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexCheckDefault"
+                            >
+                              Nike
+                            </label>
+                          </div>
+                          <div>
+                            <label for="">221</label>
+                          </div>
+                        </div>
+                        <div class="form-check d-flex justify-content-between">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexCheckDefault"
+                            >
+                              Reebok
+                            </label>
+                          </div>
+                          <div>
+                            <label for="">120</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingfive">
+                  <button
+                    class="accordion-button collapsed px-0"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFive"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFive"
+                  >
+                    GENDERS
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingFive"
+                >
+                  <div class="accordion-body px-0">
+                    <div class="genders">
+                      <div class="ps-1">
+                        <div class="form-check d-flex justify-content-between">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexCheckDefault"
+                            >
+                              All
+                            </label>
+                          </div>
+                          <div>
+                            <label for="">121</label>
+                          </div>
+                        </div>
+                        <div class="form-check d-flex justify-content-between">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexCheckDefault"
+                            >
+                              MEN
+                            </label>
+                          </div>
+                          <div>
+                            <label for="">11</label>
+                          </div>
+                        </div>
+                        <div class="form-check d-flex justify-content-between">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexCheckDefault"
+                            >
+                              WOMEN
+                            </label>
+                          </div>
+                          <div>
+                            <label for="">221</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button collapsed px-0"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    DISCOUNT
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingOne"
+                >
+                  <div class="accordion-body px-0">Placeholder content</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button
+                    class="accordion-button collapsed px-0"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    TYPE
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingTwo"
+                >
+                  <div class="accordion-body px-0">Placeholder content</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button
+                    class="accordion-button collapsed px-0"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
+                    OCCASION
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingThree"
+                >
+                  <div class="accordion-body px-0">Placeholder content</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button
+                    class="accordion-button collapsed px-0"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFour"
+                  >
+                    COLORS
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingFour"
+                >
+                  <div class="accordion-body px-0">
+                    <div class="color">
+                      <div class="ps-1 colors">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+
+            <div class="pb-5"></div>
+          </div>
+
+          <div class="p-0 col-lg-10 col-12">
+            <div class="row m-0">
+              <div class="col-lg-4 col-12 p-0 mt-4">
+                <div class="card">
+                  <img src="assets/icons/heart.svg" alt="" class="heart" />
+                  <img
+                    src="assets/imgs/product1.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="d-flex mb-3 vid">
+                    <div class="w-50 text-center">
+                      <img
+                        src="assets/imgs/play.png"
+                        alt=""
+                        style="width: 20px"
+                      />
+                      VIDEO
+                    </div>
+                    <div class="sep"></div>
+                    <div class="w-50 text-center">
+                      <img src="assets/imgs/star--v1.png" class="star" alt="" />
+                      <img src="assets/imgs/star--v1.png" class="star" alt="" />
+                      <img src="assets/imgs/star--v1.png" class="star" alt="" />
+                      (8 reviews)
+                    </div>
+                  </div>
+
+                  <div
+                    class="w-25 m-auto"
+                    style="border: 1px solid grey; border-radius: 50%"
+                  ></div>
+                  <div class="card-body">
+                    <h5>THE NORTH FACE</h5>
+                    <p class="card-text m-0">Some quick example text .</p>
+                    <span class="price-original me-2">99.99 AED</span>
+                    <span class="price-discount me-2">60.21 AED</span>
+                    <span class="price-save">Save 12.2</span>
+
+                    <div class="mob-buttons">
+                      <div class="d-flex">
+                        <div class="dropdown">
+                          <button
+                            class="btn-size dropdown-toggle"
+                            href="#"
+                            role="button"
+                            id="dropdownMenuLink"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            Size
+                          </button>
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuLink"
+                          >
+                            <li><a class="dropdown-item" href="#">28</a></li>
+                            <li><a class="dropdown-item" href="#">30</a></li>
+                            <li><a class="dropdown-item" href="#">32</a></li>
+                          </ul>
+                        </div>
+
+                        <button type="button" class="btn-addToCard">
+                          ADD TO BAG
+                        </button>
+                        <button class="btn-heart">
+                          <img src="assets/icons/heart.svg" alt="" />
+                        </button>
+                      </div>
+                      <button class="btn-s-guide mt-2 mb-3">SIZE GUIDE</button>
+
+                      <div
+                        class="w-50 m-auto"
+                        style="border: 1px solid black; border-radius: 50%"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-12 p-0 mt-4">
+                <div class="card">
+                  <img src="assets/icons/heart.svg" alt="" class="heart" />
+                  <img
+                    src="assets/imgs/product2.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="d-flex mb-3 vid">
+                    <div class="w-50 text-center">
+                      <img
+                        src="assets/imgs/play.png"
+                        alt=""
+                        style="width: 20px"
+                      />
+                      VIDEO
+                    </div>
+                    <div class="sep"></div>
+                    <div class="w-50 text-center">
+                      <img src="assets/imgs/star--v1.png" class="star" alt="" />
+                      <img src="assets/imgs/star--v1.png" class="star" alt="" />
+                      <img src="assets/imgs/star--v1.png" class="star" alt="" />
+                      (8 reviews)
+                    </div>
+                  </div>
+
+                  <div
+                    class="w-25 m-auto"
+                    style="border: 1px solid grey; border-radius: 50%"
+                  ></div>
+                  <div class="card-body">
+                    <h5>THE NORTH FACE</h5>
+                    <p class="card-text m-0">Some quick example text .</p>
+                    <p class="card-price">99.99</p>
+
+                    <div class="mob-buttons">
+                      <div class="d-flex">
+                        <div class="dropdown">
+                          <button
+                            class="btn-size dropdown-toggle"
+                            href="#"
+                            role="button"
+                            id="dropdownMenuLink"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            Size
+                          </button>
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuLink"
+                          >
+                            <li><a class="dropdown-item" href="#">28</a></li>
+                            <li><a class="dropdown-item" href="#">30</a></li>
+                            <li><a class="dropdown-item" href="#">32</a></li>
+                          </ul>
+                        </div>
+
+                        <button type="button" class="btn-addToCard">
+                          ADD TO BAG
+                        </button>
+                        <button class="btn-heart">
+                          <img src="assets/icons/heart.svg" alt="" />
+                        </button>
+                      </div>
+                      <button class="btn-s-guide mt-2 mb-3">SIZE GUIDE</button>
+
+                      <div
+                        class="w-50 m-auto"
+                        style="border: 1px solid black; border-radius: 50%"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-12 p-0 mt-4">
+                <div class="card">
+                  <img src="assets/icons/heart.svg" alt="" class="heart" />
+                  <img
+                    src="assets/imgs/product3.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="d-flex mb-3 vid">
+                    <div class="w-50 text-center">
+                      <img
+                        src="assets/imgs/play.png"
+                        alt=""
+                        style="width: 20px"
+                      />
+                      VIDEO
+                    </div>
+                    <div class="sep"></div>
+                    <div class="w-50 text-center">
+                      <img src="assets/imgs/star--v1.png" class="star" alt="" />
+                      <img src="assets/imgs/star--v1.png" class="star" alt="" />
+                      <img src="assets/imgs/star--v1.png" class="star" alt="" />
+                      (8 reviews)
+                    </div>
+                  </div>
+
+                  <div
+                    class="w-25 m-auto"
+                    style="border: 1px solid grey; border-radius: 50%"
+                  ></div>
+                  <div class="card-body">
+                    <h5>THE NORTH FACE</h5>
+                    <p class="card-text m-0">Some quick example text .</p>
+                    <span class="price-original me-2">99.99 AED</span>
+                    <span class="price-discount me-2">60.21 AED</span>
+                    <span class="price-save">Save 10</span>
+
+                    <div class="mob-buttons">
+                      <div class="d-flex">
+                        <div class="dropdown">
+                          <button
+                            class="btn-size dropdown-toggle"
+                            href="#"
+                            role="button"
+                            id="dropdownMenuLink"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            Size
+                          </button>
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuLink"
+                          >
+                            <li><a class="dropdown-item" href="#">28</a></li>
+                            <li><a class="dropdown-item" href="#">30</a></li>
+                            <li><a class="dropdown-item" href="#">32</a></li>
+                          </ul>
+                        </div>
+
+                        <button type="button" class="btn-addToCard">
+                          ADD TO BAG
+                        </button>
+                        <button class="btn-heart">
+                          <img src="assets/icons/heart.svg" alt="" />
+                        </button>
+                      </div>
+                      <button class="btn-s-guide mt-2 mb-3">SIZE GUIDE</button>
+
+                      <div
+                        class="w-50 m-auto"
+                        style="border: 1px solid black; border-radius: 50%"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row m-0">
+              <div class="col-lg-4 col-12 p-0 mt-4">
+                <div class="card">
+                  <img src="assets/icons/heart.svg" alt="" class="heart" />
+                  <img
+                    src="assets/imgs/product1.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="d-flex mb-3 vid">
+                    <div class="w-50 text-center">
+                      <img
+                        src="assets/imgs/play.png"
+                        alt=""
+                        style="width: 20px"
+                      />
+                      VIDEO
+                    </div>
+                    <div class="sep"></div>
+                    <div class="w-50 text-center">
+                      <img src="assets/imgs/star--v1.png" class="star" alt="" />
+                      <img src="assets/imgs/star--v1.png" class="star" alt="" />
+                      <img src="assets/imgs/star--v1.png" class="star" alt="" />
+                      (8 reviews)
+                    </div>
+                  </div>
+
+                  <div
+                    class="w-25 m-auto"
+                    style="border: 1px solid grey; border-radius: 50%"
+                  ></div>
+                  <div class="card-body">
+                    <h5>THE NORTH FACE</h5>
+                    <p class="card-text m-0">Some quick example text .</p>
+                    <p class="card-price">99.99</p>
+
+                    <div class="mob-buttons">
+                      <div class="d-flex">
+                        <div class="dropdown">
+                          <button
+                            class="btn-size dropdown-toggle"
+                            href="#"
+                            role="button"
+                            id="dropdownMenuLink"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            Size
+                          </button>
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuLink"
+                          >
+                            <li><a class="dropdown-item" href="#">28</a></li>
+                            <li><a class="dropdown-item" href="#">30</a></li>
+                            <li><a class="dropdown-item" href="#">32</a></li>
+                          </ul>
+                        </div>
+
+                        <button type="button" class="btn-addToCard">
+                          ADD TO BAG
+                        </button>
+                        <button class="btn-heart">
+                          <img src="assets/icons/heart.svg" alt="" />
+                        </button>
+                      </div>
+                      <button class="btn-s-guide mt-2 mb-3">SIZE GUIDE</button>
+
+                      <div
+                        class="w-50 m-auto"
+                        style="border: 1px solid black; border-radius: 50%"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-12 p-0 mt-4">
+                <div class="card">
+                  <img src="assets/icons/heart.svg" alt="" class="heart" />
+                  <img
+                    src="assets/imgs/product2.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="d-flex mb-3 vid">
+                    <div class="w-50 text-center">
+                      <img
+                        src="assets/imgs/play.png"
+                        alt=""
+                        style="width: 20px"
+                      />
+                      VIDEO
+                    </div>
+                    <div class="sep"></div>
+                    <div class="w-50 text-center">
+                      <img src="assets/imgs/star--v1.png" class="star" alt="" />
+                      <img src="assets/imgs/star--v1.png" class="star" alt="" />
+                      <img src="assets/imgs/star--v1.png" class="star" alt="" />
+                      (8 reviews)
+                    </div>
+                  </div>
+
+                  <div
+                    class="w-25 m-auto"
+                    style="border: 1px solid grey; border-radius: 50%"
+                  ></div>
+                  <div class="card-body">
+                    <h5>THE NORTH FACE</h5>
+                    <p class="card-text m-0">Some quick example text .</p>
+                    <span class="price-original me-2">99.99 AED</span>
+                    <span class="price-discount me-2">60.21 AED</span>
+                    <span class="price-save">Save 20</span>
+
+                    <div class="mob-buttons">
+                      <div class="d-flex">
+                        <div class="dropdown">
+                          <button
+                            class="btn-size dropdown-toggle"
+                            href="#"
+                            role="button"
+                            id="dropdownMenuLink"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            Size
+                          </button>
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuLink"
+                          >
+                            <li><a class="dropdown-item" href="#">28</a></li>
+                            <li><a class="dropdown-item" href="#">30</a></li>
+                            <li><a class="dropdown-item" href="#">32</a></li>
+                          </ul>
+                        </div>
+
+                        <button type="button" class="btn-addToCard">
+                          ADD TO BAG
+                        </button>
+                        <button class="btn-heart">
+                          <img src="assets/icons/heart.svg" alt="" />
+                        </button>
+                      </div>
+                      <button class="btn-s-guide mt-2 mb-3">SIZE GUIDE</button>
+
+                      <div
+                        class="w-50 m-auto"
+                        style="border: 1px solid black; border-radius: 50%"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-12 p-0 mt-4">
+                <div class="card">
+                  <img src="assets/icons/heart.svg" alt="" class="heart" />
+                  <img
+                    src="assets/imgs/product3.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="d-flex mb-3 vid">
+                    <div class="w-50 text-center">
+                      <img
+                        src="assets/imgs/play.png"
+                        alt=""
+                        style="width: 20px"
+                      />
+                      VIDEO
+                    </div>
+                    <div class="sep"></div>
+                    <div class="w-50 text-center">
+                      <img src="assets/imgs/star--v1.png" class="star" alt="" />
+                      <img src="assets/imgs/star--v1.png" class="star" alt="" />
+                      <img src="assets/imgs/star--v1.png" class="star" alt="" />
+                      (8 reviews)
+                    </div>
+                  </div>
+
+                  <div
+                    class="w-25 m-auto"
+                    style="border: 1px solid grey; border-radius: 50%"
+                  ></div>
+                  <div class="card-body">
+                    <h5>THE NORTH FACE</h5>
+                    <p class="card-text m-0">Some quick example text .</p>
+                    <span class="price-original me-2">99.99 AED</span>
+                    <span class="price-discount me-2">60.21 AED</span>
+                    <span class="price-save">Save 20.23</span>
+
+                    <div class="mob-buttons">
+                      <div class="d-flex">
+                        <div class="dropdown">
+                          <button
+                            class="btn-size dropdown-toggle"
+                            href="#"
+                            role="button"
+                            id="dropdownMenuLink"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            Size
+                          </button>
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuLink"
+                          >
+                            <li><a class="dropdown-item" href="#">28</a></li>
+                            <li><a class="dropdown-item" href="#">30</a></li>
+                            <li><a class="dropdown-item" href="#">32</a></li>
+                          </ul>
+                        </div>
+
+                        <button type="button" class="btn-addToCard">
+                          ADD TO BAG
+                        </button>
+                        <button class="btn-heart">
+                          <img src="assets/icons/heart.svg" alt="" />
+                        </button>
+                      </div>
+                      <button class="btn-s-guide mt-2 mb-3">SIZE GUIDE</button>
+
+                      <div
+                        class="w-50 m-auto"
+                        style="border: 1px solid black; border-radius: 50%"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row m-0">
+              <div class="col-lg-4 col-12 p-0 mt-4">
+                <div class="card">
+                  <img src="assets/icons/heart.svg" alt="" class="heart" />
+                  <img
+                    src="assets/imgs/product1.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="d-flex mb-3 vid">
+                    <div class="w-50 text-center">
+                      <img
+                        src="assets/imgs/play.png"
+                        alt=""
+                        style="width: 20px"
+                      />
+                      VIDEO
+                    </div>
+                    <div class="sep"></div>
+                    <div class="w-50 text-center">
+                      <img src="assets/imgs/star--v1.png" class="star" alt="" />
+                      <img src="assets/imgs/star--v1.png" class="star" alt="" />
+                      <img src="assets/imgs/star--v1.png" class="star" alt="" />
+                      (8 reviews)
+                    </div>
+                  </div>
+
+                  <div
+                    class="w-25 m-auto"
+                    style="border: 1px solid grey; border-radius: 50%"
+                  ></div>
+                  <div class="card-body">
+                    <h5>THE NORTH FACE</h5>
+                    <p class="card-text m-0">Some quick example text .</p>
+                    <p class="card-price">99.99</p>
+
+                    <div class="mob-buttons">
+                      <div class="d-flex">
+                        <div class="dropdown">
+                          <button
+                            class="btn-size dropdown-toggle"
+                            href="#"
+                            role="button"
+                            id="dropdownMenuLink"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            Size
+                          </button>
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuLink"
+                          >
+                            <li><a class="dropdown-item" href="#">28</a></li>
+                            <li><a class="dropdown-item" href="#">30</a></li>
+                            <li><a class="dropdown-item" href="#">32</a></li>
+                          </ul>
+                        </div>
+
+                        <button type="button" class="btn-addToCard">
+                          ADD TO BAG
+                        </button>
+                        <button class="btn-heart">
+                          <img src="assets/icons/heart.svg" alt="" />
+                        </button>
+                      </div>
+                      <button class="btn-s-guide mt-2 mb-3">SIZE GUIDE</button>
+
+                      <div
+                        class="w-50 m-auto"
+                        style="border: 1px solid black; border-radius: 50%"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-12 p-0 mt-4">
+                <div class="card">
+                  <img src="assets/icons/heart.svg" alt="" class="heart" />
+                  <img
+                    src="assets/imgs/product2.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="d-flex mb-3 vid">
+                    <div class="w-50 text-center">
+                      <img
+                        src="assets/imgs/play.png"
+                        alt=""
+                        style="width: 20px"
+                      />
+                      VIDEO
+                    </div>
+                    <div class="sep"></div>
+                    <div class="w-50 text-center">
+                      <img src="assets/imgs/star--v1.png" class="star" alt="" />
+                      <img src="assets/imgs/star--v1.png" class="star" alt="" />
+                      <img src="assets/imgs/star--v1.png" class="star" alt="" />
+                      (8 reviews)
+                    </div>
+                  </div>
+
+                  <div
+                    class="w-25 m-auto"
+                    style="border: 1px solid grey; border-radius: 50%"
+                  ></div>
+                  <div class="card-body">
+                    <h5>THE NORTH FACE</h5>
+                    <p class="card-text m-0">Some quick example text .</p>
+                    <p class="card-price">99.99</p>
+
+                    <div class="mob-buttons">
+                      <div class="d-flex">
+                        <div class="dropdown">
+                          <button
+                            class="btn-size dropdown-toggle"
+                            href="#"
+                            role="button"
+                            id="dropdownMenuLink"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            Size
+                          </button>
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuLink"
+                          >
+                            <li><a class="dropdown-item" href="#">28</a></li>
+                            <li><a class="dropdown-item" href="#">30</a></li>
+                            <li><a class="dropdown-item" href="#">32</a></li>
+                          </ul>
+                        </div>
+
+                        <button type="button" class="btn-addToCard">
+                          ADD TO BAG
+                        </button>
+                        <button class="btn-heart">
+                          <img src="assets/icons/heart.svg" alt="" />
+                        </button>
+                      </div>
+                      <button class="btn-s-guide mt-2 mb-3">SIZE GUIDE</button>
+
+                      <div
+                        class="w-50 m-auto"
+                        style="border: 1px solid black; border-radius: 50%"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-12 p-0 mt-4">
+                <div class="card">
+                  <img src="assets/icons/heart.svg" alt="" class="heart" />
+                  <img
+                    src="assets/imgs/product3.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="d-flex mb-3 vid">
+                    <div class="w-50 text-center">
+                      <img
+                        src="assets/imgs/play.png"
+                        alt=""
+                        style="width: 20px"
+                      />
+                      VIDEO
+                    </div>
+                    <div class="sep"></div>
+                    <div class="w-50 text-center">
+                      <img src="assets/imgs/star--v1.png" class="star" alt="" />
+                      <img src="assets/imgs/star--v1.png" class="star" alt="" />
+                      <img src="assets/imgs/star--v1.png" class="star" alt="" />
+                      (8 reviews)
+                    </div>
+                  </div>
+
+                  <div
+                    class="w-25 m-auto"
+                    style="border: 1px solid grey; border-radius: 50%"
+                  ></div>
+                  <div class="card-body">
+                    <h5>THE NORTH FACE</h5>
+                    <p class="card-text m-0">Some quick example text .</p>
+                    <p class="card-price">99.99</p>
+
+                    <div class="mob-buttons">
+                      <div class="d-flex">
+                        <div class="dropdown">
+                          <button
+                            class="btn-size dropdown-toggle"
+                            href="#"
+                            role="button"
+                            id="dropdownMenuLink"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            Size
+                          </button>
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuLink"
+                          >
+                            <li><a class="dropdown-item" href="#">28</a></li>
+                            <li><a class="dropdown-item" href="#">30</a></li>
+                            <li><a class="dropdown-item" href="#">32</a></li>
+                          </ul>
+                        </div>
+
+                        <button type="button" class="btn-addToCard">
+                          ADD TO BAG
+                        </button>
+                        <button class="btn-heart">
+                          <img src="assets/icons/heart.svg" alt="" />
+                        </button>
+                      </div>
+                      <button class="btn-s-guide mt-2 mb-3">SIZE GUIDE</button>
+
+                      <div
+                        class="w-50 m-auto"
+                        style="border: 1px solid black; border-radius: 50%"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-
-</body>
-
+  </body>
 </html>
